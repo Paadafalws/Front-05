@@ -17,7 +17,7 @@ function LoginCliente() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://127.0.0.1:8000/api/cliente/login/', formData)
+    axios.post('http://127.0.0.1:8000/api/cliente/registro/', formData)
       .then((response) => {
         console.log('Login bem-sucedido:', response.data);
         setIsLoggedIn(true);
